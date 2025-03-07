@@ -18,7 +18,7 @@ export default function LoginPage() {
       redirect: false,
     });
 
-    if (!result?.error) {
+    if (!result?.error && result?.ok) {
       router.push("/dashboard");
       toast.success("Login successful");
     } else {
@@ -67,7 +67,7 @@ export default function LoginPage() {
               onClick={() => router.push("/signup")}
               className="text-indigo-600 cursor-pointer hover:underline font-semibold"
             >
-              Sign Up
+              Sign up
             </a>
           </p>
         </form>
