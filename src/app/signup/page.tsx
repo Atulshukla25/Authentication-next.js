@@ -41,7 +41,7 @@ export default function SignupPage() {
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-indigo-500 to-pink-500 p-6">
       <div className="w-full max-w-md p-10 bg-white shadow-2xl rounded-3xl border border-gray-300">
         <h2 className="text-4xl font-extrabold text-center mb-8 text-gray-900">
-          Join Us
+          Sign Up
         </h2>
         <form
           onSubmit={handleSubmit(handleSignup)}
